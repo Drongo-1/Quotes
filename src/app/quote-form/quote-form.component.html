@@ -4,10 +4,9 @@
       <hr>
         <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
           <div class="form-group">
-
-              <label for="message">Quote</label>
+            <label for="message">Quote</label>
               <input type="text" required class="form-control quote-area" id="message" [(ngModel)]="newQuote.message" name="message" #message="ngModel">
-              <div [hidden]="message.valid || message.pristine" class="alert alert-danger">
+                <div [hidden]="message.valid || message.pristine" class="alert alert-danger">
                 <p> Quote is Required</p>
                 
             </div>
