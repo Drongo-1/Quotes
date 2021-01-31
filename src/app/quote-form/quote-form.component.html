@@ -7,10 +7,8 @@
             <label for="message">Quote</label>
               <input type="text" required class="form-control quote-area" id="message" [(ngModel)]="newQuote.message" name="message" #message="ngModel">
                 <div [hidden]="message.valid || message.pristine" class="alert alert-danger">
-                <p> Quote is Required</p>
-                
-            </div>
-
+                  <p> Quote is Required</p>
+                </div>
           </div>
           <div class="form-group">
 
