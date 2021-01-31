@@ -2,12 +2,11 @@
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
-                        <a href="#" class="navbar-brand">User Quotes</a>
-                    </div>
-                </div>
-              </nav>
-              
-              <div class="container">
+        <a href="#" class="navbar-brand">User Quotes</a>
+      </div>
+    </div>
+    </nav>        
+    <div class="container">
               <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form> 
               <div class="jumbotron" *ngFor = 'let quote of userQuotes, let i = index'>
                 <h2>"{{quote.message}}"</h2>
