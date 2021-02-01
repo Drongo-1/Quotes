@@ -6,7 +6,7 @@
       </div>
     </div>
     </nav>        
-    <div class="container-fluid qi">
+    <div class="container-fluid qi text-bolder">
       <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form> 
         <div class="jumbotron kk" *ngFor = 'let quote of userQuotes, let i = index'>
           <h2>"{{quote.message}}"</h2>
