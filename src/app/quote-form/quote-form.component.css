@@ -1,3 +1,8 @@
 .quote-area{
-    height: 150px;
+    height: 200px;
+    width: 200px;
+}
+label{
+    color: skyblue;
+    font-size: 20px;
 }
